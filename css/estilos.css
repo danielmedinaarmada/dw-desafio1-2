@@ -1,0 +1,245 @@
+body {
+  margin:0;
+  font-family: 'Open Sans', sans-serif;
+  color: #515151;
+}
+
+a{
+  color:#515151;
+}
+
+header {
+  background: #273B47;
+  padding:0 10px;
+  height: 50px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+.header-right{
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.header-right .button {
+  margin-left:10px;
+}
+
+nav {
+  /* background: purple; */
+  /* float:right; */
+  /*position: absolute;
+  right:0;
+  top:0;*/
+  height: inherit;
+}
+
+nav ul {
+  margin:0;
+  height: inherit;
+  display: flex;   
+}
+
+nav li {
+  list-style: none;
+  height: inherit;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+nav li:after{
+  content:"|";
+  display: inline-block;
+  /*margin: 0 10px;*/
+}
+
+nav li:last-child:after{
+  display: none;
+}
+
+nav a {
+  color:white;
+  height: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  /*border-top: 5px solid transparent;*/ /* Aplica el efecto de una linea sobre el menu que hago click*/
+}
+
+nav a:hover{
+  /*border-top: 5px solid red;*/
+  box-shadow: inset 0 5px 0px #FF4842 !important;  /*donde se ubica la sombra, x y difuminado, color.*/ /*#FF4842 = red*/
+}
+
+nav a.is-active {
+ box-shadow: inset 0 5px 0px #7DCD40;  /*donde se ubica la sombra, x y difuminado, color.*/   /* #7DCD40 = green*/
+}
+
+h1 {
+  margin: 0;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.button {
+  background: gray;
+  /*border-bottom: 5px solid black;*/ /* para hacer la somra con border */ 
+  font-size: 14px;
+  padding: 5px 10px 10px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition: .2s;
+  box-shadow: inset 0 -5px 0 rgba(0,0,0,.3);  
+}
+
+.button:active{   /*Cuando actives el boton se haga un poco mas pequeño */
+  transform: scale(.9);
+}
+
+/*Para que una clase herede las clases de otra se ponen seguidas ".clase1.clase2"  */
+.button.red {
+  background: #FF4842; /*#FF4842 = red*/
+  /*border-color: yellow;*/
+}
+
+.portada {
+  /*border: 10px solid red;*/
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.portada .description {
+  background: rgba(255,255,255,.8);
+  position: absolute;
+  bottom: 30px;
+  left:20px;
+  padding: 20px;
+}
+
+.blog{
+  width:1000px;
+  margin: 0 auto;
+}
+
+.blog-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blog-items h3 {
+  font-weight: 600;
+  margin: 10px 0 15px;
+
+}
+
+.item-blog {
+  width:300px;
+}
+
+.item-blog .description {
+  margin-bottom: 15px;
+}
+
+.paginador {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.paginador ul{
+  display: flex;
+  list-style: none;
+  margin:0 0 0 10px;
+  padding:0;
+}
+
+.paginador li{
+  background: #EAEAEA;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid gray;
+  margin: 0 5px;
+}
+
+.paginador li.selected{
+  border-color: transparent;  
+  background: white;
+}
+
+.paginador a {
+  text-decoration: none;
+  display: block;
+  padding: 0 10px;
+  height: inherit;
+  
+}
+
+.autor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;  
+  border-top: 1px solid gray;
+  padding: 15px; 
+}
+
+.autor p {
+  margin:0;
+}
+
+.autor img {
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* 
+cambiar el menu con float
+nav {
+  background: purple;
+  float:right;
+}
+
+nav ul, li {
+  margin:0;
+}
+
+nav li {
+  display: inline-block;
+  height:50px;
+}
+
+cambiar el menu con posiciones absolutas
+nav {
+  background: purple;
+  position: absolute;
+  right:0;
+  top:0;
+}
+
+nav ul, li {
+  margin:0;
+}
+
+nav li {
+  display: inline-block;
+  height:50px;
+}
+
+cambiar el menu con display flex
+
+header {
+  background: #273B47;
+  display: flex;
+  justify-content: space-between;
+ }
+
+
+*/
